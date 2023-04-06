@@ -61,6 +61,22 @@ python finetune.py \
     --group_by_length
 ```
 
+### For Windows 11
+
+1. Make sure you've set up [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install)
+    - [Older Versions of Windows](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
+    - [Troubleshooting](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues)
+2. Ensure you have the correct version of WSL2 with: `wsl --set-default-version 2`
+3. Ensure you have a Ubuntu distro using `wsl --install` or `wsl --install -d Ubuntu-18.04`
+4. Select the Ubuntu distro if necessary with `wsl --set-version Ubuntu-18.04 2`
+5. Ensure you have the correct version selection by using the command `wsl -l -v` and making sure a `*` is next to the desired Ubuntu distro
+6. Restart your PC
+7. Install [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/)
+8. Make sure Docker Desktop is using the WSL2 back-end
+9. Make sure Docker Desktop is set-up to work with your default WSL distro
+10. Restart your computer
+11. Follow instructions for Docker below!
+
 ### Inference (`generate.py`)
 
 This file reads the foundation model from the Hugging Face model hub and the LoRA weights from `tloen/alpaca-lora-7b`, and runs a Gradio interface for inference on a specified input. Users should treat this as example code for the use of the model, and modify it as needed.
