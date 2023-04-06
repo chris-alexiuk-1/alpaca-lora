@@ -109,10 +109,7 @@ docker build -t alpaca-lora .
 2. Run the container (you can also use `finetune.py` and all of its parameters as shown above for training):
 
 ```bash
-docker run --gpus=all --shm-size 64g -p 7860:7860 -v ${HOME}/.cache:/root/.cache --rm alpaca-lora generate.py \
-    --load_8bit \
-    --base_model 'decapoda-research/llama-7b-hf' \
-    --lora_weights 'tloen/alpaca-lora-7b'
+docker run --gpus=all --shm-size 64g -p 7860:7860 -v ${HOME}/.cache:/root/.cache --rm alpaca-lora generate.py --load_8bit --base_model 'decapoda-research/llama-7b-hf' --lora_weights 'tloen/alpaca-lora-7b'
 ```
 
 3. Open `https://localhost:7860` in the browser
