@@ -169,6 +169,7 @@ docker-compose down --volumes --rmi all
     - 🇷🇺 <https://huggingface.co/IlyaGusev/llama_7b_ru_turbo_alpaca_lora>
     - 🇺🇦 <https://huggingface.co/robinhad/ualpaca-7b-llama>
   - 13B:
+    - <https://huggingface.co/Angainor/alpaca-lora-13b>
     - <https://huggingface.co/chansung/alpaca-lora-13b>
     - <https://huggingface.co/mattreid/alpaca-lora-13b>
     - <https://huggingface.co/samwit/alpaca13B-lora>
@@ -180,8 +181,8 @@ docker-compose down --volumes --rmi all
     - <https://huggingface.co/baseten/alpaca-30b>
     - <https://huggingface.co/chansung/alpaca-lora-30b>
     - 🇯🇵 <https://huggingface.co/kunishou/Japanese-Alapaca-LoRA-30b-v0>
- - 65B
-   - <https://huggingface.co/chansung/alpaca-lora-65b>
+  - 65B
+    - <https://huggingface.co/chansung/alpaca-lora-65b>
 - [alpaca-native](https://huggingface.co/chavinlo/alpaca-native), a replication using the original Alpaca code
 
 ### Example outputs
