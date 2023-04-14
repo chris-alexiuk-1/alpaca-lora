@@ -2,6 +2,7 @@
 
 - 🤗 **Try the pretrained model out [here](https://huggingface.co/spaces/tloen/alpaca-lora), courtesy of a GPU grant from Huggingface!**
 - Users have created a Discord server for discussion and support [here](https://discord.gg/prbq284xX5)
+- 4/6: Repo has been updated with Microsoft Research's [LLaMA-GPT4 dataset](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM).
 
 This repository contains code for reproducing the [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) results using [low-rank adaptation (LoRA)](https://arxiv.org/pdf/2106.09685.pdf).
 We provide an Instruct model of similar quality to `text-davinci-003` that can run [on a Raspberry Pi](https://twitter.com/miolini/status/1634982361757790209) (for research),
@@ -167,20 +168,25 @@ docker-compose down --volumes --rmi all
 - [alpaca.cpp](https://github.com/antimatter15/alpaca.cpp), a native client for running Alpaca models on the CPU
 - [Alpaca-LoRA-Serve](https://github.com/deep-diver/Alpaca-LoRA-Serve), a ChatGPT-style interface for Alpaca models
 - [AlpacaDataCleaned](https://github.com/gururise/AlpacaDataCleaned), a project to improve the quality of the Alpaca dataset
+- [GPT-4 Alpaca Data](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM) a project to port synthetic data creation to GPT-4
+- [dolly-15k-instruction-alpaca-format](https://huggingface.co/datasets/c-s-ale/dolly-15k-instruction-alpaca-format), an Alpaca-compatible version of [Databricks' Dolly 15k human-generated instruct dataset](https://github.com/databrickslabs/dolly/tree/master/data) (see [blog](https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm))
 - Various adapter weights (download at own risk):
   - 7B:
     - <https://huggingface.co/tloen/alpaca-lora-7b>
     - <https://huggingface.co/samwit/alpaca7B-lora>
     - 🇧🇷 <https://huggingface.co/22h/cabrita-lora-v0-1>
     - 🇨🇳 <https://huggingface.co/qychen/luotuo-lora-7b-0.1>
+    - 🇨🇳 <https://huggingface.co/ziqingyang/chinese-alpaca-lora-7b>
     - 🇯🇵 <https://huggingface.co/kunishou/Japanese-Alapaca-LoRA-7b-v0>
     - 🇫🇷 <https://huggingface.co/bofenghuang/vigogne-lora-7b>
     - 🇹🇭 <https://huggingface.co/Thaweewat/thai-buffala-lora-7b-v0-1>
     - 🇩🇪 <https://huggingface.co/thisserand/alpaca_lora_german>
     - 🇵🇱 <https://huggingface.co/mmosiolek/polpaca-lora-7b>
+    - 🇵🇱 <https://huggingface.co/chrisociepa/alpaca-lora-7b-pl>
     - 🇮🇹 <https://huggingface.co/teelinsan/camoscio-7b-llama>
     - 🇷🇺 <https://huggingface.co/IlyaGusev/llama_7b_ru_turbo_alpaca_lora>
     - 🇺🇦 <https://huggingface.co/robinhad/ualpaca-7b-llama>
+    - 🇮🇹 <https://huggingface.co/mchl-labs/stambecco-7b-plus>
   - 13B:
     - <https://huggingface.co/Angainor/alpaca-lora-13b>
     - <https://huggingface.co/chansung/alpaca-lora-13b>
@@ -189,7 +195,9 @@ docker-compose down --volumes --rmi all
     - 🇯🇵 <https://huggingface.co/kunishou/Japanese-Alapaca-LoRA-13b-v0>
     - 🇰🇷 <https://huggingface.co/chansung/koalpaca-lora-13b>
     - 🇨🇳 <https://huggingface.co/facat/alpaca-lora-cn-13b>
+    - 🇨🇳 <https://huggingface.co/ziqingyang/chinese-alpaca-lora-13b>
     - 🇪🇸 <https://huggingface.co/plncmm/guanaco-lora-13b>
+    - 🇮🇹 <https://huggingface.co/mchl-labs/stambecco-13b-plus>
   - 30B:
     - <https://huggingface.co/baseten/alpaca-30b>
     - <https://huggingface.co/chansung/alpaca-lora-30b>
@@ -197,6 +205,7 @@ docker-compose down --volumes --rmi all
   - 65B
     - <https://huggingface.co/chansung/alpaca-lora-65b>
 - [alpaca-native](https://huggingface.co/chavinlo/alpaca-native), a replication using the original Alpaca code
+- [llama.onnx](https://github.com/tpoisonooo/llama.onnx), a project to inference alpaca with onnx format
 
 ### Example outputs
 
